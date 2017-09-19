@@ -18,3 +18,5 @@ pivotal-mywork
 ```
 
 If you get any errors, please create an issue with the full output of the command.
+
+Any other feedback is greatly appreciated!
