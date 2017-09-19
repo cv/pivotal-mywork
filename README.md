@@ -4,7 +4,8 @@ Spits out a list of work completed/enqueued in Pivotal Tracker. Useful for times
 
 ## Installing
 
-Ensure $GOPATH/bin is in your $PATH, then:
+* Install a Go development environment (MacOS: `brew install go`) 
+* Ensure `$GOPATH/bin` is listed in your `PATH`, then:
 
 ```bash
 go install github.com/cv/pivotal-mywork
