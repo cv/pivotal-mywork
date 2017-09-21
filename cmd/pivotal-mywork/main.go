@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/fatih/color"
 	"github.com/cv/go-pivotaltracker/v5/pivotal"
+	"github.com/fatih/color"
 )
 
 // 35 days ago

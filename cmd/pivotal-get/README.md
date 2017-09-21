@@ -1,6 +1,6 @@
-# pivotal-mywork
+# pivotal-get
 
-Spits out a list of work completed/enqueued in Pivotal Tracker. Useful for timesheets.
+Given a story ID, fetches the data from it.
 
 ## Installing
 
@@ -8,13 +8,13 @@ Spits out a list of work completed/enqueued in Pivotal Tracker. Useful for times
 * Ensure `$GOPATH/bin` is listed in your `PATH`, then:
 
 ```bash
-go install github.com/cv/pivotal-mywork
+go install github.com/cv/pivotal-tools/cmd/pivotal-get
 ```
 
 ## Running
 
 ```bash
-pivotal-mywork
+pivotal-get 151105268
 ```
 
 If you get any errors, please create an issue with the full output of the command.
