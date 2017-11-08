@@ -22,7 +22,7 @@ func init() {
 var getCmd = &cobra.Command{
 	Use:   "get",
 	Short: "Print information about a card",
-	Run: func(_ *cobra.Command, _ []string) {
+	Run: func(_ *cobra.Command, args []string) {
 		token := os.Getenv("PIVOTAL_TOKEN")
 		if token == "" {
 			fmt.Println("PIVOTAL_TOKEN environment variable not set")
@@ -37,12 +37,12 @@ var getCmd = &cobra.Command{
 			os.Exit(-2)
 		}
 
-		if len(os.Args) != 2 {
+		if len(args) != 1 {
 			fmt.Println("Usage: pivotal-get <STORY ID>")
 			os.Exit(-3)
 		}
 
-		id := os.Args[1]
+		id := args[0]
 		if id == "" {
 			fmt.Println("No story ID given")
 			os.Exit(-3)

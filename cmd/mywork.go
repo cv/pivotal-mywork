@@ -81,10 +81,10 @@ var myworkCmd = &cobra.Command{
 				byAcceptedAt[done] = append(byAcceptedAt[done], story)
 			} else {
 				fmt.Printf("%s %s %s %s %s %s\n",
+					color.GreenString(updated),
 					color.HiBlueString(fmt.Sprint(story.Id)),
 					color.YellowString(story.Type),
 					color.MagentaString(story.State),
-					color.GreenString(updated),
 					color.HiGreenString(done),
 					story.Name,
 				)
